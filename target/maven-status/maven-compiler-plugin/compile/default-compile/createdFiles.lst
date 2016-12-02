@@ -1,0 +1,8 @@
+com/lale/app/service/SendMessageServiceImpl.class
+com/lale/app/bo/LalePhoneNumber.class
+com/lale/app/controller/SendMessageController.class
+com/lale/app/bo/SendMessage.class
+com/lale/app/bo/RequestWrapper.class
+com/lale/app/service/SendMessageService.class
+com/lale/app/bo/Example.class
+com/lale/app/bo/LaleMessage.class
