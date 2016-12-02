@@ -33,6 +33,13 @@ public class SendMessageServiceImpl implements SendMessageService{
 		sendMessage.broadCastMessage(laleMessage, lalePhoneNumbers);
 	}
 	
+	public void broadCastMessageStringFormat(String message, List<String> phoneNumbers){
+		LaleMessage laleMessage = new LaleMessage(message);
+		List<LalePhoneNumber> lalePhoneNumbers = getListOfNumbers(phoneNumbers);
+		SendMessage sendMessage = new SendMessage();
+		sendMessage.broadCastMessage(laleMessage, lalePhoneNumbers);
+	}
+	
 	public List<LalePhoneNumber> getListOfNumbers(List<String> phoneNumbers){
 		ArrayList<LalePhoneNumber> numList = new ArrayList<LalePhoneNumber>();
 		for(String num : phoneNumbers){

@@ -44,9 +44,9 @@ public class SendMessage {
 	    		Message message = Message.creator(new PhoneNumber(laleNumber.getPhoneNumber()),
 	    		        new PhoneNumber(SENDER_PHONE_NUMBER), 
 	    		        laleMessage.getMessage()).create();
-	    		System.out.println("Message sent successfully");
+	    		System.out.println("Message sent successfully to:"+laleNumber.getPhoneNumber());
 	    	} catch (Exception e){
-	    		System.out.println("Encountered some issues");
+	    		System.out.println("Encountered some issues sending message to"+laleNumber.getPhoneNumber());
 	    	}
 			
 	}
